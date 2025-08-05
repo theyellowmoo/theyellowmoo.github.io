@@ -1,4 +1,88 @@
 ---
-layout: home
-# Index page
+layout: default
+title: The Yellow Moo
 ---
+
+<section class="hero text-center">
+  <h1>🐮 Hi! I'm the Yellow Moo</h1>
+  <p class="subtitle">A yellow cow watching the world spin.</p>
+</section>
+
+<section class="sections container">
+  <div class="grid">
+    <a href="/kinh-te-don-gian" class="card">
+      <h2>Kinh tế đơn giản</h2>
+      <p>Những gì mình hiểu về cung – cầu, lạm phát, chu kỳ kinh tế, chính sách tài khóa và tiền tệ...</p>
+    </a>
+
+    <a href="/hieu-tien-hieu-minh" class="card">
+      <h2>Hiểu tiền – hiểu mình</h2>
+      <p>Vay – tiết kiệm – đầu tư – đòn bẩy – tâm lý tiền bạc… Những bài học về tài chính cá nhân.</p>
+    </a>
+
+    <a href="/phap-luat-doi-thuong" class="card">
+      <h2>Pháp luật đời thường</h2>
+      <p>Những điều học được từ Luật Đất đai, Nhà ở, quy hoạch… qua ví dụ thật. Những chính sách cần biết.</p>
+    </a>
+
+    <a href="/thi-truong-chuyen-dong" class="card">
+      <h2>Thị trường chuyển động</h2>
+      <p>Quan sát giá đất, tin tức vĩ mô, hạ tầng, quy hoạch, xu hướng… Tư duy chiến lược & định giá.</p>
+    </a>
+  </div>
+</section>
+
+<style>
+.hero {
+  padding: 4rem 1rem 2rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  font-style: italic;
+}
+
+.sections {
+  margin: 3rem auto;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  display: block;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+  color: #222;
+}
+
+.card p {
+  margin: 0;
+  color: #444;
+}
+</style>
